@@ -250,7 +250,7 @@
           :height="$vuetify.breakpoint.smAndDown ? 800 : 600"
           src="bentim3.jpg"
         >
-        <div class="d-flex justify-space-around pt-15">
+        <div class="d-flex justify-space-around hidden-sm-and-down">
           <!-- <v-card class="opacitybg mx-auto" width="150px" weight="120px" href="https://www.yusufonaran.me" target="_blank">
               <v-card-text>
                   <p class="text-h2 text--primary text-center font-weight-regular">
@@ -264,7 +264,7 @@
               </v-card-actions>
           </v-card> -->
           <!-- ---------------- -->
-          <v-card class="opacitybg mx-auto" width="150px" weight="120px">
+          <v-card class="opacitybg mx-auto hidden-sm-and-down" width="150px" weight="120px">
               <v-card-text>
                   <p class="text-h2 text--primary text-center font-weight-regular">
                       {{ days % 365  }}
@@ -277,7 +277,7 @@
               </v-card-actions>
           </v-card>
           <!-- ---------------- -->
-          <v-card class="opacitybg mx-auto" width="150px" weight="120px">
+          <v-card class="opacitybg mx-auto hidden-sm-and-down" width="150px" weight="120px">
               <v-card-text>
                   <p class="text-h2 text--primary text-center font-weight-regular">
                       {{ hours % 24 }}
@@ -290,7 +290,7 @@
               </v-card-actions>
           </v-card>
           <!-- ---------------- -->
-          <v-card class="opacitybg mx-auto" width="150px" weight="120px">
+          <v-card class="opacitybg mx-auto hidden-sm-and-down" width="150px" weight="120px">
               <v-card-text>
                   <p class="text-h2 text--primary text-center font-weight-regular">
                       {{ minutes % 60 }}
@@ -303,7 +303,7 @@
               </v-card-actions>
           </v-card>
           <!-- ---------------- -->
-          <v-card class="opacitybg mx-auto" width="150px" weight="120px">
+          <v-card class="opacitybg mx-auto hidden-sm-and-down" width="150px" weight="120px">
               <v-card-text>
                   <p class="text-h2 text--primary text-center font-weight-regular">
                       {{ seconds % 60 }}
@@ -317,6 +317,74 @@
           </v-card>
   
       </div>
+      
+      <div class="justify-space-around hidden-md-and-up">
+        <!-- <v-card class="opacitybg mx-auto" width="150px" weight="120px" href="https://www.yusufonaran.me" target="_blank">
+            <v-card-text>
+                <p class="text-h2 text--primary text-center font-weight-regular">
+                    {{ years }}
+                </p>
+            </v-card-text>
+            <v-card-actions>
+                <v-btn block text color="deep-purple accent-4">
+                    YEARS
+                </v-btn>
+            </v-card-actions>
+        </v-card> -->
+        <!-- ---------------- -->
+        <v-card class="opacitybg mx-auto hidden-md-and-up" width="150px" weight="120px">
+            <v-card-text>
+                <p class="text-h2 text--primary text-center font-weight-regular">
+                    {{ days % 365  }}
+                </p>
+            </v-card-text>
+            <v-card-actions>
+                <v-btn block text color="#9CAF88" class="text-h5">
+                    DAYS
+                </v-btn>
+            </v-card-actions>
+        </v-card>
+        <!-- ---------------- -->
+        <v-card class="opacitybg mx-auto hidden-md-and-up" width="150px" weight="120px">
+            <v-card-text>
+                <p class="text-h2 text--primary text-center font-weight-regular">
+                    {{ hours % 24 }}
+                </p>
+            </v-card-text>
+            <v-card-actions>
+                <v-btn block text color="#9CAF88" class="text-h5">
+                    HOURS
+                </v-btn>
+            </v-card-actions>
+        </v-card>
+        <!-- ---------------- -->
+        <v-card class="opacitybg mx-auto hidden-md-and-up" width="150px" weight="120px">
+            <v-card-text>
+                <p class="text-h2 text--primary text-center font-weight-regular">
+                    {{ minutes % 60 }}
+                </p>
+            </v-card-text>
+            <v-card-actions>
+                <v-btn block text color="#9CAF88" class="text-h5">
+                    MINUTES
+                </v-btn>
+            </v-card-actions>
+        </v-card>
+        <!-- ---------------- -->
+        <v-card class="opacitybg mx-auto hidden-md-and-up" width="150px" weight="120px">
+            <v-card-text>
+                <p class="text-h2 text--primary text-center font-weight-regular">
+                    {{ seconds % 60 }}
+                </p>
+            </v-card-text>
+            <v-card-actions>
+                <v-btn block text color="#9CAF88" class="text-h5">
+                    SECONDS
+                </v-btn>
+            </v-card-actions>
+        </v-card>
+
+    </div>
           <!-- <v-container fill-height>
             <v-row class="mx-auto">
               <v-col
