@@ -60,11 +60,28 @@
                   >
                   <!-- :class="[$vuetify.breakpoint.smAndDown ? 'display-2' : 'display-4']" -->
                     <span                      
-                      class="font-weight-black txt"
+                      class="font-weight-black txt hidden-sm-and-down"
                     >
                       YOU ARE INVITED TO OUR WEDDING
                     </span>
-                    <div style="margin-top: 200px;" class="">
+                    <div style="margin-top: 200px;" class="hidden-sm-and-down">
+                      <span
+         
+                        class="font-weight-black name"
+                      >
+                        Ben &
+                      </span>
+
+                      <br>
+
+                      <span
+                       
+                        class="font-weight-black name"
+                      >
+                        Tim
+                      </span>
+                    </div>
+                    <div style="margin-top: -150px;" class="hidden-md-and-up">
                       <span
          
                         class="font-weight-black name"
@@ -85,7 +102,17 @@
                   </v-col>
 
                   <v-btn
-                    class="align-self-end"
+                    class="align-self-end hidden-sm-and-down"
+                    fab
+                    outlined
+                    @click="$vuetify.goTo('#motifs')"
+                  >
+                    <v-icon>mdi-chevron-double-down</v-icon>
+                  </v-btn>
+
+                  <v-btn
+                    class="align-self-end hidden-md-and-up"
+                    style="margin-top: 150px;"
                     fab
                     outlined
                     @click="$vuetify.goTo('#motifs')"
@@ -237,7 +264,7 @@
               </v-card-actions>
           </v-card> -->
           <!-- ---------------- -->
-          <v-card class="opacitybg mx-auto" width="150px" weight="120px" href="https://www.yusufonaran.me" target="_blank">
+          <v-card class="opacitybg mx-auto" width="150px" weight="120px">
               <v-card-text>
                   <p class="text-h2 text--primary text-center font-weight-regular">
                       {{ days % 365  }}
@@ -250,7 +277,7 @@
               </v-card-actions>
           </v-card>
           <!-- ---------------- -->
-          <v-card class="opacitybg mx-auto" width="150px" weight="120px" href="https://www.yusufonaran.me" target="_blank">
+          <v-card class="opacitybg mx-auto" width="150px" weight="120px">
               <v-card-text>
                   <p class="text-h2 text--primary text-center font-weight-regular">
                       {{ hours % 24 }}
@@ -263,7 +290,7 @@
               </v-card-actions>
           </v-card>
           <!-- ---------------- -->
-          <v-card class="opacitybg mx-auto" width="150px" weight="120px" href="https://www.yusufonaran.me" target="_blank">
+          <v-card class="opacitybg mx-auto" width="150px" weight="120px">
               <v-card-text>
                   <p class="text-h2 text--primary text-center font-weight-regular">
                       {{ minutes % 60 }}
@@ -276,7 +303,7 @@
               </v-card-actions>
           </v-card>
           <!-- ---------------- -->
-          <v-card class="opacitybg mx-auto" width="150px" weight="120px" href="https://www.yusufonaran.me" target="_blank">
+          <v-card class="opacitybg mx-auto" width="150px" weight="120px">
               <v-card-text>
                   <p class="text-h2 text--primary text-center font-weight-regular">
                       {{ seconds % 60 }}
