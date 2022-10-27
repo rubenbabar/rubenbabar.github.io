@@ -132,337 +132,249 @@
         class="grey lighten-3"
       >
         <!-- <div class="py-12"></div> -->
-        <v-img
-            :min-height="'calc(50vh - ' + $vuetify.application.top + 'px)'"
-            src="bentim4.jpg"
-        >
-
-        <v-container class="text-center">
-          <h2 class="txt font-weight-bold mt-12 mb-3">COLOR MOTIF</h2>
-
-          <v-responsive
-            class="mx-auto mb-12"
-            width="56"
+        <v-row no-gutters>
+          <v-img  
+            class="ïmg1"        
+            :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
+            src="bentim5.jpg"
           >
-            <v-divider class="mb-1"></v-divider>
 
-            <v-divider></v-divider>
-          </v-responsive>
+          <v-container class="text-center">
+            <h2 class="txt font-weight-bold mt-12 mb-3 hidden-sm-and-down">COLOR MOTIF</h2>
+            <h2 class="txt2 font-weight-bold mt-12 mb-3 hidden-md-and-up">COLOR MOTIF</h2>
 
-          <v-row class="mt-16">
-            <v-col
-              v-for="({ icon, color, title, text, image }, i) in motifs"
-              :key="i"
-              cols="12"
-              md="3"
+            <!-- <v-responsive
+              class="mx-auto mb-12"
+              width="56"
             >
-              <v-card
-                class="py-16 px-4 opacitybg1"
-                
-                flat
-              >
-                <v-theme-provider dark>
-                  <div>
-                    <v-avatar
-                      :color="color"
-                      size="88"
-                    >
-                      <!-- <v-icon
-                        large
-                        v-text="icon"
-                      ></v-icon> -->
-                    </v-avatar>
-                  </div>
-                </v-theme-provider>
+              <v-divider class="mb-1"></v-divider>
 
-                <v-card-title
-                  class="justify-center font-weight-black text-uppercase txt1"
-                  v-text="title"
-                ></v-card-title>
+              <v-divider></v-divider>
+            </v-responsive> -->
 
-                <!-- <v-card-text
-                  class="subtitle-1"
-                  v-text="text"
+            <v-container fill-height class="hidden-md-and-up">
+              <v-row >
+                <v-col
+                  v-for="({ icon, color, title, text, image }, i) in motifs"
+                  :key="i"
+                  cols="6"
+                  md="6"
                 >
-                </v-card-text> -->
-
-                <v-img height="300" aspect-ratio contain :src="image"></v-img>
-              </v-card>
-            </v-col>
-          </v-row>          
-        </v-container>
-        </v-img>
+                  <v-card
+                    width="100%"
+                    class="py-8 px-2 opacitybg1"                    
+                    flat
+                  >
+                    <v-theme-provider dark>
+                      <div>
+                        <v-avatar
+                          :color="color"
+                          size="100"
+                        >
+                          <!-- <v-icon
+                            large
+                            v-text="icon"
+                          ></v-icon> -->
+                        </v-avatar>
+                      </div>
+                    </v-theme-provider>
+  
+                    <v-card-title
+                      class="justify-center font-weight-black text-uppercase txt21"
+                      v-text="title"
+                    ></v-card-title>
+  
+                    <!-- <v-card-text
+                      class="subtitle-1"
+                      v-text="text"
+                    >
+                    </v-card-text> -->
+  
+                    <v-img height="200" aspect-ratio contain :src="image"></v-img>
+                  </v-card>
+                </v-col>
+              </v-row> 
+            </v-container> 
+            <v-container fill-height class="hidden-sm-and-down">
+              <v-row >
+                <v-col
+                  v-for="({ icon, color, title, text, image }, i) in motifs"
+                  :key="i"
+                  cols="6"
+                  md="6"
+                >
+                  <v-card
+                    class="py-16 px-4 opacitybg1"
+                    
+                    flat
+                  >
+                    <v-theme-provider dark>
+                      <div>
+                        <v-avatar
+                          :color="color"
+                          size="100"
+                        >
+                          <!-- <v-icon
+                            large
+                            v-text="icon"
+                          ></v-icon> -->
+                        </v-avatar>
+                      </div>
+                    </v-theme-provider>
+  
+                    <v-card-title
+                      class="justify-center font-weight-black text-uppercase txt1"
+                      v-text="title"
+                    ></v-card-title>
+  
+                    <!-- <v-card-text
+                      class="subtitle-1"
+                      v-text="text"
+                    >
+                    </v-card-text> -->
+  
+                    <v-img height="300" aspect-ratio contain :src="image"></v-img>
+                  </v-card>
+                </v-col>
+              </v-row>         
+          </v-container>
+          </v-img>
+        </v-row>
         <!-- <div class="py-12"></div> -->
       </section>
-
-      <!-- <section id="about-me">
-        <div class="py-12"></div>
-
-        <v-img
-          :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
-          src="bentim2.jpg"
-        >
-
-        <v-container class="text-center">
-          <h2 class="display-2 font-weight-bold mb-3">ABOUT ME</h2>
-
-          <v-responsive
-            class="mx-auto mb-8"
-            width="56"
-          >
-            <v-divider class="mb-1"></v-divider>
-
-            <v-divider></v-divider>
-          </v-responsive>
-
-          <v-responsive
-            class="mx-auto title font-weight-light mb-8"
-            max-width="720"
-          >
-            Vuetify is the #1 component library for Vue.js and has been in active development since 2016. The goal of the project is to provide users with everything that is needed to build rich and engaging web applications using the Material Design specification. It accomplishes that with a consistent update cycle, Long-term Support (LTS) for previous versions, responsive community engagement, a vast ecosystem of resources and a dedication to quality components.
-          </v-responsive>
-
-          <v-avatar
-            class="elevation-12 mb-12"
-            size="128"
-          >
-            <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
-          </v-avatar>
-
-          <div></div>
-
-          <v-btn
-            color="grey"
-            href="https://vuetifyjs.com"
-            outlined
-            large
-          >
-            <span class="grey--text text--darken-1 font-weight-bold">
-              Vuetify Documentation
-            </span>
-          </v-btn>
-        </v-container>
-        </v-img>
-        <div class="py-12"></div>
-      </section> -->      
-
+         
       <section id="countdown">
         <v-parallax
-          :height="$vuetify.breakpoint.smAndDown ? 800 : 600"
+          :height="$vuetify.breakpoint.smAndDown ? 1000 : 800"
           src="bentim3.jpg"
-        >
-        
-        <div class="d-flex justify-space-around hidden-sm-and-down">
-          <!-- <v-card class="opacitybg mx-auto" width="150px" weight="120px" href="https://www.yusufonaran.me" target="_blank">
-              <v-card-text>
-                  <p class="text-h2 text--primary text-center font-weight-regular">
-                      {{ years }}
-                  </p>
-              </v-card-text>
-              <v-card-actions>
-                  <v-btn block text color="deep-purple accent-4">
-                      YEARS
-                  </v-btn>
-              </v-card-actions>
-          </v-card> -->
-          <!-- ---------------- -->
-          <v-card class="opacitybg mx-auto hidden-sm-and-down" width="150px" weight="120px">
+        >      
+          <div class="d-flex justify-space-around hidden-sm-and-down">   
+            <v-card class="opacitybg mx-auto hidden-sm-and-down" width="200px">
+                <v-card-text>
+                    <p class="text-h2 text--primary text-center font-weight-regular">
+                        {{ days % 365  }}
+                    </p>
+                    <p style="color: #9CAF88 !important;" class="text-h4 text--primary text-center font-weight-black">
+                      DAYS
+                    </p>
+                </v-card-text>
+                <!-- <v-card-actions>
+                    <v-btn block text color="#9CAF88" class="text-h5 font-weight-black">
+                        DAYS
+                    </v-btn>
+                </v-card-actions> -->
+            </v-card>
+            <v-card class="opacitybg mx-auto hidden-sm-and-down" width="200px">
+                <v-card-text>
+                    <p class="text-h2 text--primary text-center font-weight-regular">
+                        {{ hours % 24 }}
+                    </p>
+                    <p style="color: #9CAF88 !important;" class="text-h4 text--primary text-center font-weight-black">
+                      HOURS
+                    </p>
+                </v-card-text>
+                <!-- <v-card-actions>
+                    <v-btn block text color="#9CAF88" class="text-h5 font-weight-black">
+                        HOURS
+                    </v-btn>
+                </v-card-actions> -->
+            </v-card>
+            <v-card class="opacitybg mx-auto hidden-sm-and-down" width="200px">
+                <v-card-text>
+                    <p class="text-h2 text--primary text-center font-weight-regular">
+                        {{ minutes % 60 }}
+                    </p>
+                    <p style="color: #9CAF88 !important;" class="text-h4 text--primary text-center font-weight-black">
+                      MINUTES
+                    </p>
+                </v-card-text>
+                <!-- <v-card-actions>
+                    <v-btn block text color="#9CAF88" class="text-h5 font-weight-black">
+                        MINUTES
+                    </v-btn>
+                </v-card-actions> -->
+            </v-card>
+            <v-card class="opacitybg mx-auto hidden-sm-and-down" width="200px">
+                <v-card-text>
+                    <p class="text-h2 text--primary text-center font-weight-regular">
+                        {{ seconds % 60 }}
+                    </p>
+                    <p style="color: #9CAF88 !important;" class="text-h4 text--primary text-center font-weight-black">
+                      SECONDS
+                    </p>
+                </v-card-text>
+                <!-- <v-card-actions>
+                    <v-btn block text color="#9CAF88" class="text-h5 font-weight-black">
+                        SECONDS
+                    </v-btn>
+                </v-card-actions> -->
+            </v-card>                    
+          </div>      
+          <div class="justify-space-around hidden-md-and-up">
+            <v-card class="opacitybg mx-auto hidden-md-and-up mb-8" width="200px">
               <v-card-text>
                   <p class="text-h2 text--primary text-center font-weight-regular">
                       {{ days % 365  }}
                   </p>
+                  <p style="color: #9CAF88 !important;" class="text-h4 text--primary text-center font-weight-black">
+                    DAYS
+                  </p>
               </v-card-text>
-              <v-card-actions>
-                  <v-btn block text color="#9CAF88" class="text-h5">
+              <!-- <v-card-actions>
+                  <v-btn block text color="#9CAF88" class="text-h5 font-weight-black">
                       DAYS
                   </v-btn>
-              </v-card-actions>
-          </v-card>
-          <!-- ---------------- -->
-          <v-card class="opacitybg mx-auto hidden-sm-and-down" width="150px" weight="120px">
+              </v-card-actions> -->
+            </v-card>
+            <v-card class="opacitybg mx-auto hidden-md-and-up mb-8" width="200px">
               <v-card-text>
                   <p class="text-h2 text--primary text-center font-weight-regular">
                       {{ hours % 24 }}
                   </p>
+                  <p style="color: #9CAF88 !important;" class="text-h4 text--primary text-center font-weight-black">
+                    HOURS
+                  </p>
               </v-card-text>
-              <v-card-actions>
-                  <v-btn block text color="#9CAF88" class="text-h5">
+              <!-- <v-card-actions>
+                  <v-btn block text color="#9CAF88" class="text-h5 font-weight-black">
                       HOURS
                   </v-btn>
-              </v-card-actions>
-          </v-card>
-          <!-- ---------------- -->
-          <v-card class="opacitybg mx-auto hidden-sm-and-down" width="150px" weight="120px">
+              </v-card-actions> -->
+            </v-card>
+            <v-card class="opacitybg mx-auto hidden-md-and-up mb-8" width="200px">
               <v-card-text>
                   <p class="text-h2 text--primary text-center font-weight-regular">
                       {{ minutes % 60 }}
                   </p>
+                  <p style="color: #9CAF88 !important;" class="text-h4 text--primary text-center font-weight-black">
+                    MINUTES
+                  </p>
               </v-card-text>
-              <v-card-actions>
-                  <v-btn block text color="#9CAF88" class="text-h5">
+              <!-- <v-card-actions>
+                  <v-btn block text color="#9CAF88" class="text-h5 font-weight-black">
                       MINUTES
                   </v-btn>
-              </v-card-actions>
-          </v-card>
-          <!-- ---------------- -->
-          <v-card class="opacitybg mx-auto hidden-sm-and-down" width="150px" weight="120px">
+              </v-card-actions> -->
+            </v-card>
+            <v-card class="opacitybg mx-auto hidden-md-and-up mb-8" width="200px">
               <v-card-text>
                   <p class="text-h2 text--primary text-center font-weight-regular">
                       {{ seconds % 60 }}
                   </p>
+                  <p style="color: #9CAF88 !important;" class="text-h4 text--primary text-center font-weight-black">
+                    SECONDS
+                  </p>
               </v-card-text>
-              <v-card-actions>
-                  <v-btn block text color="#9CAF88" class="text-h5">
+              <!-- <v-card-actions>
+                  <v-btn block text color="#9CAF88" class="text-h5 font-weight-black">
                       SECONDS
                   </v-btn>
-              </v-card-actions>
-          </v-card>                    
-      </div>
-      
-      <div class="justify-space-around hidden-md-and-up">
-        <!-- <v-card class="opacitybg mx-auto" width="150px" weight="120px" href="https://www.yusufonaran.me" target="_blank">
-            <v-card-text>
-                <p class="text-h2 text--primary text-center font-weight-regular">
-                    {{ years }}
-                </p>
-            </v-card-text>
-            <v-card-actions>
-                <v-btn block text color="deep-purple accent-4">
-                    YEARS
-                </v-btn>
-            </v-card-actions>
-        </v-card> -->
-        <!-- ---------------- -->
-        <v-card class="opacitybg mx-auto hidden-md-and-up" width="150px" weight="120px">
-            <v-card-text>
-                <p class="text-h2 text--primary text-center font-weight-regular">
-                    {{ days % 365  }}
-                </p>
-            </v-card-text>
-            <v-card-actions>
-                <v-btn block text color="#9CAF88" class="text-h5">
-                    DAYS
-                </v-btn>
-            </v-card-actions>
-        </v-card>
-        <!-- ---------------- -->
-        <v-card class="opacitybg mx-auto hidden-md-and-up" width="150px" weight="120px">
-            <v-card-text>
-                <p class="text-h2 text--primary text-center font-weight-regular">
-                    {{ hours % 24 }}
-                </p>
-            </v-card-text>
-            <v-card-actions>
-                <v-btn block text color="#9CAF88" class="text-h5">
-                    HOURS
-                </v-btn>
-            </v-card-actions>
-        </v-card>
-        <!-- ---------------- -->
-        <v-card class="opacitybg mx-auto hidden-md-and-up" width="150px" weight="120px">
-            <v-card-text>
-                <p class="text-h2 text--primary text-center font-weight-regular">
-                    {{ minutes % 60 }}
-                </p>
-            </v-card-text>
-            <v-card-actions>
-                <v-btn block text color="#9CAF88" class="text-h5">
-                    MINUTES
-                </v-btn>
-            </v-card-actions>
-        </v-card>
-        <!-- ---------------- -->
-        <v-card class="opacitybg mx-auto hidden-md-and-up" width="150px" weight="120px">
-            <v-card-text>
-                <p class="text-h2 text--primary text-center font-weight-regular">
-                    {{ seconds % 60 }}
-                </p>
-            </v-card-text>
-            <v-card-actions>
-                <v-btn block text color="#9CAF88" class="text-h5">
-                    SECONDS
-                </v-btn>
-            </v-card-actions>
-        </v-card>
-
-    </div>
-          <!-- <v-container fill-height>
-            <v-row class="mx-auto">
-              <v-col
-                v-for="[value, title] of stats"
-                :key="title"
-                cols="12"
-                md="3"
-              >
-                <div class="text-center">
-                  <div
-                    class="display-3 font-weight-black mb-4"
-                    v-text="value"
-                  ></div>
-
-                  <div
-                    class="title font-weight-regular text-uppercase"
-                    v-text="title"
-                  ></div>
-                </div>
-              </v-col>
-            </v-row>
-          </v-container> -->
+              </v-card-actions> -->
+            </v-card>
+          </div>         
         </v-parallax>
       </section>    
-
-      <!-- <section id="blog"> -->
-        <!-- <div class="py-12"></div> -->
-
-        <!-- <v-container>           -->
-          <!-- <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Blog</h2>
-
-          <v-responsive
-            class="mx-auto mb-12"
-            width="56"
-          >
-            <v-divider class="mb-1"></v-divider>
-
-            <v-divider></v-divider>
-          </v-responsive>
-
-          <v-row>
-            <v-col
-              v-for="({ src, text, title }, i) in articles"
-              :key="i"
-              cols="12"
-              md="4"
-            >
-              <v-img
-                :src="src"
-                class="mb-4"
-                height="275"
-                max-width="100%"
-              ></v-img>
-
-              <h3
-                class="font-weight-black mb-4 text-uppercase"
-                v-text="title"
-              ></h3>
-
-              <div
-                class="title font-weight-light mb-5"
-                v-text="text"
-              ></div>
-
-              <v-btn
-                class="ml-n4 font-weight-black"
-                text
-              >
-                Continue Reading
-              </v-btn>
-            </v-col>
-          </v-row> -->
-        <!-- </v-container> -->
-
-        <!-- <div class="py-12"></div> -->
-      <!-- </section> -->
-      
+            
       <v-sheet
         id="contact"
         color="#DCE3D5"
@@ -470,73 +382,14 @@
         tag="section"
         tile
       >
-        <!-- <div class="py-12"></div> -->
         <v-img
             :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
             src="bentim7.jpg"
         >
-        <v-container fill-height>
-          <!-- <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">RSVP</h2>
-
-          <v-responsive
-            class="mx-auto mb-12"
-            width="56"
-          >
-            <v-divider class="mb-1"></v-divider>
-
-            <v-divider></v-divider>
-          </v-responsive> -->
-
-          <!-- <v-theme-provider light> -->
-            <!-- <v-row>
-              <v-col cols="12">
-                <v-text-field
-                  flat
-                  label="Full Name"
-                  solo
-                ></v-text-field>
-              </v-col>
-
-              <v-col cols="12">
-                <v-text-field
-                  flat
-                  label="Contact Number*"
-                  solo
-                ></v-text-field>
-              </v-col>
-
-              <v-col cols="12">
-                <v-text-field
-                  flat
-                  label="Subject*"
-                  solo
-                ></v-text-field>
-              </v-col>
-
-              <v-col cols="12">
-                <v-textarea
-                  flat
-                  label="Message*"
-                  solo
-                ></v-textarea>
-              </v-col>
-
-              <v-col
-                class="mx-auto"
-                cols="auto"
-              >
-                <v-btn
-                  color="green"
-                  dark
-                  x-large
-                >
-                  Submit
-                </v-btn>
-              </v-col>
-            </v-row> -->
+        <v-container fill-height>      
             <v-row align="center" justify="center">
               <v-col align="center" justify="center">  
-              <v-card width="500" height="850" color="#DCE3D5">         
+              <v-card width="700" height="900" color="#DCE3D5">         
               <iframe                
                 src="https://docs.google.com/forms/d/e/1FAIpQLSeChYyqc2eHVORpP89dKP2dlGOOV3fMPWpPu_3-UHukaBNF-Q/viewform?embedded=true" 
                 width="100%" 
@@ -551,12 +404,8 @@
             </v-card>   
             </v-col>
           </v-card>
-            <!-- </v-theme-provider> -->
-          
         </v-container>
         </v-img>
-
-        <!-- <div class="py-12"></div> -->
       </v-sheet>
       
       <v-btn fab @click="topFunction" id="myBtn" title="Go to top">
@@ -614,7 +463,7 @@
           {
             icon: 'mdi-circle',
             color: '#808080',
-            title: 'Grey',
+            title: 'Dark Grey',
             text: 'Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit.',
             image: 'grey.png',
           },
@@ -635,7 +484,7 @@
           {
             icon: 'mdi-circle',
             color: '#C08081',
-            title: 'Pink',
+            title: 'Old Rose',
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
             image: 'pink.png',
           },
@@ -647,13 +496,7 @@
           ['5m', 'Total Downloads'],
         ],
       }
-    },
-
-    computed: {
-        s() {
-            return this.seconds
-        }
-    },
+    },  
 
     created() {
         // const years = ref(0);
@@ -716,9 +559,17 @@ html::-webkit-scrollbar {
   font-family: 'Architects Daughter';
   font-size: 8vh;
 }
+.txt2 {
+  font-family: 'Architects Daughter';
+  font-size: 6vh;
+}
 .txt1 {
   font-family: 'Architects Daughter';
   font-size: 4vh;
+}
+.txt21 {
+  font-family: 'Architects Daughter';
+  font-size: 4vw;
 }
 #myBtn {
   display: none; /* Hidden by default */
@@ -739,5 +590,12 @@ html::-webkit-scrollbar {
 #myBtn:hover {
   background-color: #9caf88; /* Add a dark-grey background on hover */
 }
+
+.img1 {
+  width: 100%;
+  height: auto;
+}
+
+
 </style>
 </html>
