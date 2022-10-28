@@ -42,7 +42,7 @@
         <v-row no-gutters>
           <v-img
             :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
-            src="bentim1.jpg"
+            src="bentim8.jpg"
           >
           <!-- src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80" -->
             <v-theme-provider dark>
@@ -50,7 +50,7 @@
                 
                 <v-row
                   align="center"
-                  class="white--text mx-auto"
+                  class="white--text mx-auto hidden-sm-and-down"
                   style="margin-top: -200px;"
                   justify="center"
                 >
@@ -65,7 +65,24 @@
                     >
                       YOU ARE INVITED TO OUR WEDDING
                     </span>
-                    <div style="margin-top: 200px;" class="hidden-sm-and-down">
+                    <div style="margin-top: 200px;">
+                      <span
+         
+                        class="font-weight-black name"
+                      >
+                        Ben & Tim
+                      </span>
+<!-- 
+                      <br>
+
+                      <span
+                       
+                        class="font-weight-black name"
+                      >
+                        Tim
+                      </span> -->
+                    </div>
+                    <!-- <div style="margin-top:-10px;" class="hidden-md-and-up">
                       <span
          
                         class="font-weight-black name"
@@ -81,24 +98,7 @@
                       >
                         Tim
                       </span>
-                    </div>
-                    <div style="margin-top: -150px;" class="hidden-md-and-up">
-                      <span
-         
-                        class="font-weight-black name"
-                      >
-                        Ben &
-                      </span>
-
-                      <br>
-
-                      <span
-                       
-                        class="font-weight-black name"
-                      >
-                        Tim
-                      </span>
-                    </div>
+                    </div> -->
 
                   </v-col>
 
@@ -111,9 +111,84 @@
                     <v-icon>mdi-chevron-double-down</v-icon>
                   </v-btn>
 
-                  <v-btn
+                  <!-- <v-btn
                     class="align-self-end hidden-md-and-up"
                     style="margin-top: 150px;"
+                    fab
+                    outlined
+                    @click="$vuetify.goTo('#motifs')"
+                  >
+                    <v-icon>mdi-chevron-double-down</v-icon>
+                  </v-btn> -->
+                </v-row>
+
+                <v-row
+                  align="center"
+                  justify="center"
+                  class="white--text mx-auto hidden-md-and-up"                  
+                  style="margin-top: 75px;"
+                >
+                  <v-col
+                    align="center"
+                    justify="center"
+                    class="white--text text-center"
+                    cols="12"
+                    tag="h1"
+                  >
+                  <!-- :class="[$vuetify.breakpoint.smAndDown ? 'display-2' : 'display-4']" -->
+                    <!-- <span                      
+                      class="font-weight-black txt hidden-md-and-up"
+                    >
+                      YOU ARE INVITED TO OUR WEDDING
+                    </span> -->
+                    <div >
+                      <span      
+                        class="font-weight-black name"
+                      >
+                        Ben & Tim
+                      </span>
+
+                      <!-- <br>
+
+                      <span
+                       
+                        class="font-weight-black name"
+                      >
+                        Tim
+                      </span> -->
+                    </div>
+                    <!-- <div style="margin-top:-10px;" class="hidden-md-and-up">
+                      <span
+         
+                        class="font-weight-black name"
+                      >
+                        Ben &
+                      </span>
+
+                      <br>
+
+                      <span
+                       
+                        class="font-weight-black name"
+                      >
+                        Tim
+                      </span>
+                    </div> -->
+
+                  </v-col>
+
+                  <!-- <v-btn
+                    class="align-self-end hidden-sm-and-down"
+                    fab
+                    outlined
+                    @click="$vuetify.goTo('#motifs')"
+                  >
+                    <v-icon>mdi-chevron-double-down</v-icon>
+                  </v-btn> -->
+
+                  <v-btn
+                    class="align-self-end hidden-md-and-up"
+                    
                     fab
                     outlined
                     @click="$vuetify.goTo('#motifs')"
@@ -122,6 +197,7 @@
                   </v-btn>
                 </v-row>
               </v-container>
+              
             </v-theme-provider>
           </v-img>
         </v-row>
