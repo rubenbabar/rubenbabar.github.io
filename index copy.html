@@ -10,7 +10,7 @@
   <link href="https://fonts.cdnfonts.com/css/gistesy" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
   
-  <link rel="shortcut icon" href="ring.png">
+  <link rel="shortcut icon" href="wedding.ico">
 </head>
 <body>
 <div id="app">
@@ -42,7 +42,7 @@
         <v-row no-gutters>
           <v-img
             :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
-            src="bentim8.jpg"
+            src="bentim1.jpg"
           >
           <!-- src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80" -->
             <v-theme-provider dark>
@@ -50,7 +50,7 @@
                 
                 <v-row
                   align="center"
-                  class="white--text mx-auto hidden-sm-and-down"
+                  class="white--text mx-auto"
                   style="margin-top: -200px;"
                   justify="center"
                 >
@@ -65,24 +65,7 @@
                     >
                       YOU ARE INVITED TO OUR WEDDING
                     </span>
-                    <div style="margin-top: 200px;">
-                      <span
-         
-                        class="font-weight-black name"
-                      >
-                        Ben & Tim
-                      </span>
-<!-- 
-                      <br>
-
-                      <span
-                       
-                        class="font-weight-black name"
-                      >
-                        Tim
-                      </span> -->
-                    </div>
-                    <!-- <div style="margin-top:-10px;" class="hidden-md-and-up">
+                    <div style="margin-top: 200px;" class="hidden-sm-and-down">
                       <span
          
                         class="font-weight-black name"
@@ -98,7 +81,24 @@
                       >
                         Tim
                       </span>
-                    </div> -->
+                    </div>
+                    <div style="margin-top: -150px;" class="hidden-md-and-up">
+                      <span
+         
+                        class="font-weight-black name"
+                      >
+                        Ben &
+                      </span>
+
+                      <br>
+
+                      <span
+                       
+                        class="font-weight-black name"
+                      >
+                        Tim
+                      </span>
+                    </div>
 
                   </v-col>
 
@@ -111,84 +111,9 @@
                     <v-icon>mdi-chevron-double-down</v-icon>
                   </v-btn>
 
-                  <!-- <v-btn
-                    class="align-self-end hidden-md-and-up"
-                    style="margin-top: 150px;"
-                    fab
-                    outlined
-                    @click="$vuetify.goTo('#motifs')"
-                  >
-                    <v-icon>mdi-chevron-double-down</v-icon>
-                  </v-btn> -->
-                </v-row>
-
-                <v-row
-                  align="center"
-                  justify="center"
-                  class="white--text mx-auto hidden-md-and-up"                  
-                  style="margin-top: 75px;"
-                >
-                  <v-col
-                    align="center"
-                    justify="center"
-                    class="white--text text-center"
-                    cols="12"
-                    tag="h1"
-                  >
-                  <!-- :class="[$vuetify.breakpoint.smAndDown ? 'display-2' : 'display-4']" -->
-                    <!-- <span                      
-                      class="font-weight-black txt hidden-md-and-up"
-                    >
-                      YOU ARE INVITED TO OUR WEDDING
-                    </span> -->
-                    <div >
-                      <span      
-                        class="font-weight-black name"
-                      >
-                        Ben & Tim
-                      </span>
-
-                      <!-- <br>
-
-                      <span
-                       
-                        class="font-weight-black name"
-                      >
-                        Tim
-                      </span> -->
-                    </div>
-                    <!-- <div style="margin-top:-10px;" class="hidden-md-and-up">
-                      <span
-         
-                        class="font-weight-black name"
-                      >
-                        Ben &
-                      </span>
-
-                      <br>
-
-                      <span
-                       
-                        class="font-weight-black name"
-                      >
-                        Tim
-                      </span>
-                    </div> -->
-
-                  </v-col>
-
-                  <!-- <v-btn
-                    class="align-self-end hidden-sm-and-down"
-                    fab
-                    outlined
-                    @click="$vuetify.goTo('#motifs')"
-                  >
-                    <v-icon>mdi-chevron-double-down</v-icon>
-                  </v-btn> -->
-
                   <v-btn
                     class="align-self-end hidden-md-and-up"
-                    
+                    style="margin-top: 150px;"
                     fab
                     outlined
                     @click="$vuetify.goTo('#photos')"
@@ -197,7 +122,6 @@
                   </v-btn>
                 </v-row>
               </v-container>
-              
             </v-theme-provider>
           </v-img>
         </v-row>
@@ -291,8 +215,14 @@
           >
 
           <v-container class="text-center">
-            <h2 class="txt font-weight-bold mt-12 mb-3 hidden-sm-and-down">COLOR MOTIF</h2>
-            <h2 class="txt2 font-weight-bold mt-12 mb-3 hidden-md-and-up">COLOR MOTIF</h2>
+            <h2 class="txt font-weight-bold mt-12 mb-3 hidden-sm-and-down">ATTIRE & COLOR MOTIF</h2>
+            <h2 class="txt2 font-weight-bold mt-12 mb-3 hidden-md-and-up">ATTIRE & COLOR MOTIF</h2>
+
+            <h4 class="txtA font-weight-bold mt-6 mb-3 hidden-sm-and-down">Gentlemen: Long Sleeves / Coat & Tie</h4>
+            <h4 class="txtA font-weight-bold hidden-sm-and-down">Ladies: Dress / Long Gown</h4>
+            <h4 class="txtB font-weight-bold mt-6 mb-3 hidden-md-and-up">Gentlemen: Long Sleeves / Coat & Tie</h4>
+            <h4 class="txtB font-weight-bold hidden-md-and-up">Ladies: Dress / Long Gown</h4>
+
 
             <!-- <v-responsive
               class="mx-auto mb-12"
